@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutz – Bewerbungs-Copilot</title>
+  <style>
+    :root { --ink: #1e2d5c; --soft: #4a5574; --bg: #dfe4eb; --paper: #fffffd; --rule: #e79089; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e5e9f4; --soft: #a0aac4; --bg: #0e1219; --paper: #1d273b; --rule: #74403f; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, "Segoe UI", sans-serif; padding: 24px 16px; }
+    main { max-width: 68ch; margin: 0 auto; background: var(--paper); padding: 28px 28px 36px; border-radius: 4px; }
+    h1, h2 { font-family: "Bahnschrift", "DIN Alternate", system-ui, sans-serif; line-height: 1.25; }
+    h1 { font-size: 26px; margin: 0 0 4px; padding-bottom: 10px; border-bottom: 2px solid var(--rule); }
+    h2 { font-size: 19px; margin: 28px 0 6px; }
+    p, li { color: var(--ink); }
+    .stand { color: var(--soft); font-size: 14px; margin-top: 8px; }
+    td { padding: 4px 12px 4px 0; vertical-align: top; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Datenschutzerklärung Bewerbungs-Copilot</h1>
+  <p class="stand">Stand: 13. Oktober 2026</p>
+
+  <h2>Kurz gesagt</h2>
+  <p>Der Bewerbungs-Copilot speichert alles nur in deinem eigenen Browser. Es gibt keinen Server, kein Konto, keine Werbung und keine Statistik. Ich als Entwickler sehe deine Daten nie.</p>
+
+  <h2>Welche Daten die Erweiterung speichert</h2>
+  <ul>
+    <li><b>Gespeicherte Stellen:</b> Jobtitel, Firma, Ort, Link zur Anzeige, Status, Bewerbungsfrist und deine Notizen.</li>
+    <li><b>Dein Profil:</b> die Angaben, die du selbst einträgst, also zum Beispiel Name, E-Mail, Telefon, Adresse, Anrede, Verfügbarkeit, Gehaltsvorstellung, LinkedIn-Link und deinen Lebenslauf als Datei.</li>
+  </ul>
+  <p>Diese Daten liegen ausschließlich im lokalen Speicher deines Browsers (<code>chrome.storage.local</code>). Sie werden nicht an mich oder an Dritte übertragen und nicht mit deinem Browser-Konto synchronisiert.</p>
+
+  <h2>Wann Daten eine Webseite erreichen</h2>
+  <ul>
+    <li><b>„Stelle speichern“:</b> Die Erweiterung liest Titel, Firma und Ort der Stellenanzeige aus, die du gerade geöffnet hast. Es wird dabei nichts gesendet.</li>
+    <li><b>„Formular ausfüllen“:</b> Die Erweiterung trägt deine Profildaten und deinen Lebenslauf in das Bewerbungsformular ein, das du gerade geöffnet hast. Das passiert nur, wenn du auf den Knopf drückst. Abgeschickt wird das Formular nie von der Erweiterung, sondern nur von dir selbst. Erst dann erhält das jeweilige Unternehmen bzw. dessen Bewerbungssystem (z. B. Personio oder softgarden) die Daten, nach dessen eigener Datenschutzerklärung.</li>
+  </ul>
+
+  <h2>Berechtigungen und wofür sie gebraucht werden</h2>
+  <table>
+    <tr><td><code>storage</code></td><td>Stellen und Profil lokal im Browser speichern.</td></tr>
+    <tr><td><code>sidePanel</code></td><td>Die Erweiterung als Seitenleiste anzeigen.</td></tr>
+    <tr><td><code>scripting</code></td><td>Auf Knopfdruck die Stellenanzeige auslesen bzw. das Bewerbungsformular ausfüllen.</td></tr>
+    <tr><td>Zugriff auf stepstone.de, de.indeed.com, linkedin.com, arbeitsagentur.de, jobs.personio.de/.com, softgarden.io</td><td>Nur auf diesen Seiten darf die Erweiterung lesen bzw. ausfüllen, und nur, wenn du einen der beiden Knöpfe drückst.</td></tr>
+  </table>
+
+  <h2>Daten löschen</h2>
+  <p>Einzelne Stellen löschst du in der Erweiterung über „Bearbeiten“ und „Karte löschen“. Wenn du die Erweiterung deinstallierst, löscht der Browser alle ihre Daten automatisch.</p>
+
+  <h2>Deine Rechte</h2>
+  <p>Da ich keine personenbezogenen Daten von dir erhalte oder speichere, kann ich dir dazu auch keine Auskunft geben. Bei Fragen schreib mir gern an die unten genannte E-Mail-Adresse. Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
+
+  <h2>Kontakt</h2>
+  <p>Der Bewerbungs-Copilot ist ein kostenloses, privates Projekt von Lasse Behrens.<br>
+    E-Mail: <a href="mailto:bewerbungscopilot@gmx.de">bewerbungscopilot@gmx.de</a></p>
+</main>
+</body>
+</html>
